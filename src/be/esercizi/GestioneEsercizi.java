@@ -82,9 +82,10 @@ public class GestioneEsercizi {
                     System.out.println("Nome: " + product.name + " Prezzo: " + product.price + " Categoria: " + product.category);
                 });
         //------------------------Esercizio4-----------------------
-        System.out.println("Esercizio4:");
+       /* System.out.println("Esercizio4:");
         Stream<Order> ordersByTier = orderList.stream();
         ordersByTier
-                .filter(order -> 2.equals order.customer)
+                .filter(order -> order.customer.tier == 2)
+                .filter(order -> order.orderDate)*/
     }
 }
