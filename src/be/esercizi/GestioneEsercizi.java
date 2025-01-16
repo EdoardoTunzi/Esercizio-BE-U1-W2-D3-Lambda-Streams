@@ -1,18 +1,20 @@
 package be.esercizi;
 
+import be.esercizi.classi.Customer;
+import be.esercizi.classi.Order;
+import be.esercizi.classi.Product;
+
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class GestioneEsercizi {
 
 
     public static void main(String[] args) {
-        //Prodotti
+        /*//Prodotti
         Product prod1 = new Product(1, "Libro1", "Books", 120.2);
         Product prod2 = new Product(2, "Libro2", "Books", 11.2);
         Product prod3 = new Product(3, "Libro3", "Books", 101.5);
@@ -82,7 +84,7 @@ public class GestioneEsercizi {
                     System.out.println("Nome: " + product.name + " Prezzo: " + product.price + " Categoria: " + product.category);
                 });
         //------------------------Esercizio4-----------------------
-       /* System.out.println("Esercizio4:");
+       *//* System.out.println("Esercizio4:");
         Stream<Order> ordersByTier = orderList.stream();
         ordersByTier
                 .filter(order -> order.customer.tier == 2)
